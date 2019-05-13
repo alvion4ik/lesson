@@ -1,13 +1,28 @@
 'use strict';
 
-var leftBorderWidth = 1;
-let second = 2;
-const pi = 3.14;
+let money = prompt("Ваш бюджет на месяц?" , ""),
+    time = prompt("Введите дату в формате YYYY-MM-DD" , "");
 
-// let answer = confirm("Are you here ?");
+let appData = {
+    moneyData : money,
+    timeData : time,
+    expenses : {
+      
+    },
+    optionalExpenses : {
 
-// console.log(answer);
+    },
+    income : [],
+    savings : false
+};
 
-let answer = prompt("Есть ли 18 ?","Да");
+let q1 = prompt("Введите обязательную статью расходов в этом месяце" , ""),
+    q2 = prompt("Во сколько обойдется?", ""),
+    q3 = prompt("Не обязательная?", "");
 
-console.log(typeof(answer));
+appData.expenses.q1 = q1;
+appData.expenses.q2 = q2;
+
+alert(appData.moneyData/30);
+console.log(appData.moneyData);
+console.log(appData.timeData);
