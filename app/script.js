@@ -5,24 +5,20 @@ let money = prompt("Ваш бюджет на месяц?" , ""),
 
 let appData = {
     moneyData : money,
-    timeData : time,
-    expenses : {
-      
-    },
-    optionalExpenses : {
-
-    },
+    expenses : {},
+    optionalExpenses : {},
     income : [],
+    timeData : time,
     savings : false
 };
 
-let q1 = prompt("Введите обязательную статью расходов в этом месяце" , ""),
-    q2 = prompt("Во сколько обойдется?", ""),
-    q3 = prompt("Не обязательная?", "");
+let a1 = prompt("Введите обязательную статью расходов в этом месяце" , ""),
+    a2 = prompt("Во сколько обойдется?", ""),
+    a3 = prompt("Введите обязательную статью расходов в этом месяце" , ""),
+    a4 = prompt("Во сколько обойдется?", "");
 
-appData.expenses.q1 = q1;
-appData.expenses.q2 = q2;
+appData.expenses.a1 = a1;
+appData.expenses.a3 = a4;
 
 alert(appData.moneyData/30);
-console.log(appData.moneyData);
-console.log(appData.timeData);
+
